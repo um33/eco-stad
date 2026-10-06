@@ -413,7 +413,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 48px;
   align-items: start;
 }
+.contact-grid > * { min-width: 0; }
+.form-row-half > div, .contact-form input, .contact-form textarea { min-width: 0; max-width: 100%; }
 .contact-info { display: flex; flex-direction: column; gap: 26px; }
+.contact-item a { overflow-wrap: anywhere; }
 .contact-item { display: flex; gap: 16px; align-items: flex-start; }
 .contact-icon {
   width: 44px; height: 44px;
