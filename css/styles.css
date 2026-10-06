@@ -283,7 +283,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* ---------- Sections ---------- */
 .section { padding: 96px 0; scroll-margin-top: 84px; }
-#kontakt, #om-oss, #tjanster, #varfor-vi { scroll-margin-top: 84px; }
+#kontakt, #om-oss, #tjanster, #varfor-vi, #omdomen { scroll-margin-top: 84px; }
 .section-tint { background: var(--bg-tint); }
 .section-heading { max-width: 640px; margin: 0 auto 56px; text-align: center; }
 .section-heading .eyebrow { display: block; }
@@ -381,6 +381,30 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .feature-icon svg { width: 26px; height: 26px; }
 .feature h3 { font-size: 1.12rem; margin-bottom: 0.4em; }
 .feature p { color: var(--slate); font-size: 0.98rem; margin: 0; }
+
+/* ---------- Omdömen ---------- */
+.section-reviews { border-top: 1px solid rgba(58,69,80,0.08); }
+.review-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.review {
+  flex: 1 1 300px;
+  max-width: 360px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.review blockquote { margin: 0; font-size: 1.05rem; line-height: 1.55; }
+.review-author { margin: auto 0 0; display: flex; flex-direction: column; gap: 2px; font-size: 0.92rem; }
+.review-author span { color: var(--slate); }
+.review-cta { margin: 48px 0 0; text-align: center; }
 
 /* ---------- Kontakt ---------- */
 .contact-grid {
